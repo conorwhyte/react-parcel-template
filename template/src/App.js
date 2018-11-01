@@ -15,7 +15,7 @@ class App extends Component {
         <header className="App-header">
           <h1>
             This app is built with <br />
-            React ⚛️ + Parcel 📦! Conor edits are working
+            React ⚛️ + Parcel 📦! Conor edits are working 2
           </h1>
           <img
             src={logo}

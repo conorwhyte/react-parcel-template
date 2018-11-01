@@ -1,0 +1,31 @@
+.App {
+  font-family: Courier; }
+  .App-navbar {
+    text-align: center;
+    padding-top: 5px;
+    font-size: 20px; }
+    .App-navbar a {
+      color: #000066;
+      padding: 0 10px;
+      text-decoration: none; }
+.Information-body {
+  text-align: center;
+  padding-top: 10px; }
+  .Information-body p {
+    padding-top: 40px; }
+.Home-body {
+  text-align: center; }
+  .Home-body-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 20vmin; }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}

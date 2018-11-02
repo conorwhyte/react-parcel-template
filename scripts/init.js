@@ -1,4 +1,3 @@
-// @remove-file-on-eject
 /**
  * Copyright (c) 2015-present, Facebook, Inc.
  *
@@ -59,10 +58,6 @@ function tryGitInit(appPath) {
   } catch (e) {
     if (didInit) {
       // If we successfully initialized but couldn't commit,
-      // maybe the commit author config is not set.
-      // In the future, we might supply our own committer
-      // like Ember CLI does, but for now, let's just
-      // remove the Git files to avoid a half-done state.
       try {
         // unlinkSync() doesn't work on directories.
         fs.removeSync(path.join(appPath, '.git'));
@@ -89,15 +84,6 @@ module.exports = function(
 
   // Copy over some of the devDependencies
   appPackage.dependencies = appPackage.dependencies || {};
-
-  // Setup the script rules
-  appPackage.scripts = {
-    start: 'react-scripts-parcel start',
-    build: 'react-scripts-parcel build',
-    test: 'react-scripts-parcel test --env=jsdom',
-    eject: 'react-scripts-parcel eject',
-  };
-
   appPackage.browserslist = defaultBrowsers;
 
   fs.writeFileSync(
@@ -173,8 +159,6 @@ module.exports = function(
   }
 
   // Install react and react-dom for backward compatibility with old CRA cli
-  // which doesn't install react and react-dom along with react-scripts
-  // or template is presetend (via --internal-testing-template)
   if (!isReactInstalled(appPackage) || template) {
     console.log(`Installing react and react-dom using ${command}...`);
     console.log();

@@ -2,7 +2,7 @@
   "name": "react-scripts-parcel-conor",
   "version": "0.0.23",
   "description": "Configuration and scripts for Create React App parcel.",
-  "repository": "sw-yx/create-react-app-parcel",
+  "repository": "conorwhyte/create-react-app-parcel",
   "license": "MIT",
   "engines": {
     "node": ">=6"

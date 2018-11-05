@@ -1,6 +1,6 @@
 {
   "name": "react-parcel-template",
-  "version": "0.1.10",
+  "version": "0.1.16",
   "description": "Configuration and scripts for Create React App parcel.",
   "repository": "conorwhyte/create-react-app-parcel",
   "license": "MIT",

@@ -259,6 +259,9 @@ module.exports = function(
   }
   console.log();
   console.log('Happy hacking!');
+
+  console.log(); 
+  console.log('If you opted to create the Cloudformation stack also, its safe to CTRL-C this operation. The stack will continue to be built in the background.')
 };
 
 function isReactInstalled(appPackage) {

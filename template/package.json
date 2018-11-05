@@ -10,8 +10,7 @@
     "test": "jest --watch",
     "clean": "rm -rf node_modules dist yarn.lock .cache && yarn",
     "puppet": "node tests/smokeTest.js",
-    "deploy": "yarn build && aws s3 cp ./dist s3://$BUCKET --recursive --acl public-read-write",
-    "form": "aws cloudformation create-stack --stack-name ReactApp --template-body file://./aws/cloudformation.json --parameters  ParameterKey=BucketName,ParameterValue=$BUCKET " 
+    "deploy": "yarn build && aws s3 cp ./dist s3://$BUCKET --recursive --acl public-read-write" 
   },
   "keywords": [ 
     "React", 
